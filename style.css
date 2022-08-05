@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.content {
+  display: flex;
+}
+
+
+input {
+  display: flex;
+  flex-flow: column wrap;
+  border: solid 1px blue;
+  border-radius: 3px;
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+#password:valid {
+  border: solid 1px rgb(77, 170, 30);
+}
+
+#password:invalid {
+  border: solid 1px red;
+}
+
+#confirm-password:valid {
+  border: solid 1px rgb(77, 170, 30);
+}
+
+#confirm-password:invalid {
+  border: solid 1px red;
+}
+
+.left {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right {
+  display: flex;
+  flex-wrap: wrap;
+}
