@@ -8,67 +8,73 @@
     <title>Sign-up Form</title>
   </head>
   <body>
-    <div class="content">
-      <div class="left">
+    <div class="main">
+      <div class="left-side">
         <div>
-          <img src="space.jpg" alt="space" width="500" height="500" />
-        </div>
-        <div>
-          <img src="logo.png" alt="logo" width="200" height="200" />
+          <img src="/logo.png" alt="logo" />
+          <h1>Sign up</h1>
         </div>
       </div>
-      <div class="right">
-        <div>
-          <h3>
-            This is not a real online service! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Necessitatibus, commodi! Sign up now
-            to get started.
-          </h3>
+      <div class="form">
+        <div class="header">
+          <div>
+            <p>
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+              Sign up <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+          </div>
         </div>
-
-        <div class="form">
-          <p>Let's do this!</p>
-          <form action="#">
-            <div class="mainInput">
-              <label for="firstName">first name</label>
-              <input type="text" id="firstName" name="first-name" required />
-            </div>
-            <div class="mainInput">
-              <label for="lastName">last name</label>
-              <input type="text" id="lastName" name="last-name" required />
-            </div>
-            <div class="mainInput">
-              <label for="email">email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="mainInput">
-              <label for="phoneNumber">phone number</label>
+        <div class="input">
+          <p class="let">Let's do this!</p>
+          <form id="form">
+            <label for="firstname"
+              >First Name
+              <input type="text" id="firstname" name="firstname" required />
+            </label>
+            <label for="lastname"
+              >Last Name
+              <input type="text" id="lastname" name="lastname" required />
+            </label>
+            <label for="email"
+              >Email
               <input
-                type="text"
-                id="phoneNumber"
-                name="phone-number"
+                type="email"
+                id="email"
+                name="email"
                 required
+                autocomplete="off"
               />
-            </div>
-            <div class="passInput">
-              <label for="password">password</label>
+            </label>
+            <label for="phonenumber"
+              >Phone Number
+              <input
+                type="tel"
+                id="phonenumber"
+                name="phonenumber"
+                required
+                pattern="[0-9]{11}"
+              />
+            </label>
+            <label for="password"
+              >Password
               <input type="password" id="password" name="password" required />
-            </div>
-            <div class="passInput">
-              <label for="confirmPassword">confirm password</label>
+            </label>
+            <label for="passwordC"
+              >Confirm Password
               <input
                 type="password"
-                id="confirm-password"
-                name="confirm-password"
+                id="confirmpassword"
+                name="confirmpassword"
                 required
               />
-            </div>
-            <button type="submit">Create Account</button>
+            </label>
           </form>
-          <div>
-            <p>Already have an account?</p>
-            <a href="#">Log in</a>
-          </div>
+        </div>
+        <div class="submit">
+          <button type="submit" form="form">Create Account</button>
+          <p>Already have an account? <a href="">Log in</a></p>
         </div>
       </div>
     </div>
