@@ -116,6 +116,10 @@ button {
   font-size: 1rem;
 }
 
+button:hover {
+  background-color:black;
+}
+
 input:focus {
   outline-color: rgb(47, 172, 172);;
 }
